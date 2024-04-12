@@ -20,34 +20,32 @@
             padding: 20px 0;
         }
 
-        nav ul {
-            list-style-type: none;
-            margin: 0;
-            padding: 0;
+        main {
+            padding: 20px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .card {
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin: 10px;
+            padding: 20px;
+            width: 300px;
             text-align: center;
         }
 
-        nav ul li {
-            display: inline;
-        }
-
-        nav ul li a {
+        .card a {
             text-decoration: none;
-            color: #fff;
+            color: #333;
             font-weight: bold;
-            background-color: #4CAF50;
-            padding: 10px 20px;
-            border-radius: 5px;
-            margin-right: 10px;
-            transition: background-color 0.3s;
+            transition: color 0.3s;
         }
 
-        nav ul li a:hover {
-            background-color: #45a049;
-        }
-
-        main {
-            padding: 20px;
+        .card a:hover {
+            color: #4CAF50;
         }
 
         footer {
@@ -55,35 +53,24 @@
             color: #fff;
             text-align: center;
             padding: 10px 0;
-        }
-
-        pre {
-            background-color: #f8f8f8;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-            padding: 10px;
-            overflow-x: auto; /* Add horizontal scrollbar if needed */
-        }
-
-        code {
-            font-family: 'Courier New', Courier, monospace;
-        }
-
-        /* Introduction section styles */
-        section {
-            margin-bottom: 20px;
+            position: absolute;
+            bottom: 0;
+            width: 100%;
         }
 
         /* Responsive layout */
         @media screen and (max-width: 768px) {
-            section {
-                padding: 10px;
+            .card {
+                width: calc(50% - 20px);
             }
         }
 
         @media screen and (max-width: 480px) {
-            section {
-                padding: 5px;
+            .card {
+                width: calc(100% - 20px);
+            }
+            main {
+                padding: 10px;
             }
         }
     </style>
@@ -94,17 +81,21 @@
     </header>
     
     <main>
-        <section>
+        <section class="card">
             <p>Welcome to Notes - your one-stop destination for accessing various programming notes and resources. Explore our collection of notes covering topics like Data Structures and Algorithms, Python programming, and more.</p>
         </section>
         
-        <nav>
-            <ul>
-                <li><a href="https://coderjacks.github.io/Notes/DSA%20Notes%20Website">DSA Notes Website</a></li><br>
-                <li><a href="https://coderjacks.github.io/Notes/m-python.py">m-python.py</a></li><br>
-                <li><a href="https://coderjacks.github.io/Notes/python.py">python.py</a></li><br>
-            </ul>
-        </nav>
+        <section class="card">
+            <a href="https://coderjacks.github.io/Notes/DSA%20Notes%20Website">DSA Notes Website</a>
+        </section>
+        
+        <section class="card">
+            <a href="https://coderjacks.github.io/Notes/m-python.py">m-python.py</a>
+        </section>
+        
+        <section class="card">
+            <a href="https://coderjacks.github.io/Notes/python.py">python.py</a>
+        </section>
     </main>
     
     <footer>
