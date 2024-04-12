@@ -68,24 +68,47 @@
         code {
             font-family: 'Courier New', Courier, monospace;
         }
+
+        /* Introduction section styles */
+        section {
+            margin-bottom: 20px;
+        }
+
+        /* Responsive layout */
+        @media screen and (max-width: 768px) {
+            section {
+                padding: 10px;
+            }
+        }
+
+        @media screen and (max-width: 480px) {
+            section {
+                padding: 5px;
+            }
+        }
     </style>
 </head>
 <body>
     <header>
-        <h1> Notes</h1>
+        <h1>Notes</h1>
     </header>
     
     <main>
-      <nav>
-        <ul>
-            <li><a href="https://coderjacks.github.io/Notes/DSA%20Notes%20Website">DSA Notes Website</a></li>
-            <li><a href="https://coderjacks.github.io/Notes/m-python.py">m-python.py</a></li>
-            <li><a href="https://coderjacks.github.io/Notes/python.py">python.py</a></li>
-        </ul>
-    </nav>
+        <section>
+            <p>Welcome to Notes - your one-stop destination for accessing various programming notes and resources. Explore our collection of notes covering topics like Data Structures and Algorithms, Python programming, and more.</p>
+        </section>
+        
+        <nav>
+            <ul>
+                <li><a href="https://coderjacks.github.io/Notes/DSA%20Notes%20Website">DSA Notes Website</a></li>
+                <li><a href="https://coderjacks.github.io/Notes/m-python.py">m-python.py</a></li>
+                <li><a href="https://coderjacks.github.io/Notes/python.py">python.py</a></li>
+            </ul>
+        </nav>
     </main>
+    
     <footer>
-        <p>&copy; 2024  Notes</p>
+        <p>&copy; 2024 Notes</p>
     </footer>
 </body>
 </html>
