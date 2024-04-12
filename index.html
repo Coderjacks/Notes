@@ -57,39 +57,7 @@
         code {
             font-family: 'Courier New', Courier, monospace;
         }
-
-        /* Button Styles */
-        .toggle-button {
-            background-color: #4CAF50; /* Green */
-            border: none;
-            color: white;
-            padding: 10px 20px;
-            text-align: center;
-            text-decoration: none;
-            display: inline-block;
-            font-size: 16px;
-            margin-bottom: 20px;
-            cursor: pointer;
-        }
-
-        .toggle-button:hover {
-            background-color: #45a049; /* Darker Green */
-        }
     </style>
-    <script>
-        function toggleSections() {
-            var pythonSection = document.getElementById("python-section");
-            var dsaSection = document.getElementById("dsa-section");
-
-            if (pythonSection.style.display === "none") {
-                pythonSection.style.display = "block";
-                dsaSection.style.display = "none";
-            } else {
-                pythonSection.style.display = "none";
-                dsaSection.style.display = "block";
-            }
-        }
-    </script>
 </head>
 <body>
     <header>
@@ -97,11 +65,13 @@
     </header>
     <nav>
         <ul>
-            <li><button class="toggle-button" onclick="toggleSections()">Toggle Sections</button></li>
+            <li><a href="https://coderjacks.github.io/Notes-Website/DSA%20Notes%20Website">DSA Notes Website</a></li>
+            <li><a href="https://coderjacks.github.io/Notes-Website/m-python.py">m-python.py</a></li>
+            <li><a href="https://coderjacks.github.io/Notes-Website/python.py">python.py</a></li>
         </ul>
     </nav>
     <main>
-        <section id="python-section">
+        <section>
             <h2>Python Notes</h2>
             <p>This section contains notes for Python programming language.</p>
             <pre><code>
@@ -112,7 +82,7 @@ def greet(name):
 greet("World")
             </code></pre>
         </section>
-        <section id="dsa-section" style="display:none;">
+        <section>
             <h2>DSA Notes (C++)</h2>
             <p>This section contains notes for Data Structures and Algorithms using C++.</p>
             <!-- Insert your DSA notes using C++ here -->
@@ -123,4 +93,3 @@ greet("World")
     </footer>
 </body>
 </html>
-
